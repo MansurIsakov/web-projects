@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SneakerX</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body, header, .carousel {
+      height: 60vh;
+    }
+    @media (max-width: 740px){
+      html,body,header, .carousel {
+        height: 100vh;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,body,header, .carousel {
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand waves-effect">
+        <strong class="blue-text">SneakerX</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link waves-effect">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a href="shop-page.html" class="nav-link waves-effect">Product</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link waves-effect">About Us</a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link waves-effect">Blog</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <span class="badge red z-depth-1 mr-1">0</span>
+              <i class="fa fa-shopping-cart"></i>
+              <span class="clearfix d-none d-sm-inline-block">Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carousel-ex" class="carousel-fade pt-4 carousel slide pt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>  
+      <li data-target="#carousel-ex" data-slide-to="1"></li>  
+      <li data-target="#carousel-ex" data-slide-to="2"></li>  
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url(img/cute-sneakers-1609793057.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SneakerX</strong>
+              </h1>
+
+              <p>
+                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eum.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ad a omnis ex veritatis necessitatibus.</strong>
+              </p>
+              
+              <a href="#" class="btn btn-outline-white btn-lg">
+                Let`s shop! <i class="fas fa-shopping-basket ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/Jordan_Yeezy_Sneakers_Market.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SneakerX</strong>
+              </h1>
+
+              <p>
+                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eum.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ad a omnis ex veritatis necessitatibus.</strong>
+              </p>
+              
+              <a href="#" class="btn btn-outline-white btn-lg">
+                Let`s shop! <i class="fas fa-shopping-basket ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/sneakers-web-1.jpg);
+        background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>SneakerX</strong>
+              </h1>
+
+              <p>
+                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eum.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ad a omnis ex veritatis necessitatibus.</strong>
+              </p>
+              
+              <a href="#" class="btn btn-outline-white btn-lg">
+                Let`s shop! <i class="fas fa-shopping-basket ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#carousel-ex" class="carousel-control-prev"
+    role="button" data-slide-to="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#carousel-ex" class="carousel-control-next"
+    role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+
+  </div>
+
+  <main>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark blue lighten-1 mt-3 mb-5">
+        <span class="navbar-brand">Brands:</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nextNav" aria-controls="nextNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nextNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">All</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Nike</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Adidas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">New Balance</a>
+            </li>
+          </ul>
+
+          <form  class="form-inline">
+            <div class="md-form my-0">
+              <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <section class="text-center mb-4">
+        <div class="row wow fadeIn">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/white-university-blue.jpg" alt="" class="card-img-top">
+                <a href="shop-page.html">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="shop-page.html" class="grey-text">
+                  <h5>Nike</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Nike Zoom
+                      <span class="badge badge-pill danger-color">NEW</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>120$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/nike-air-max-1g-aq0863-001-right.jpg" alt="" class="card-img-top">
+                <a href="shop-page.html">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="shop-page.html" class="grey-text">
+                  <h5>Nike</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Nike Air Max
+                      <span class="badge badge-pill danger-color">NEW</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>90$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/bq0103-100.jpg" alt="" class="card-img-top">
+                <a href="shop-page.html">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="shop-page.html" class="grey-text">
+                  <h5>Nike</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Nike Air
+                      <span class="badge badge-pill danger-color">NEW</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>150$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row wow fadeIn">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/adidas-court-team-bounce.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Adidas</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Adidas aka Tri Poloski
+                      <span class="badge badge-pill danger-color">On Sale</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>50$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/adidas-fluidflow.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Adidas</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Adidas Fluid Flow
+                      <span class="badge badge-pill danger-color">HOT</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>130$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/Rebel_58453001_blackwhite_hi-res.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Adidas</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> Adidas aka Uchta Poloska
+                      <span class="badge badge-pill danger-color">On Sale</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>70$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row wow fadeIn">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/NEW692960_1000_1.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>New Balance</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> New Balance Runners
+                      <span class="badge badge-pill danger-color">TOP</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>190$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/w_1080v10_1.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>New Balance</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> New Balance 1080 V10
+                      <span class="badge badge-pill danger-color">TOP</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>220$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+
+              <div class="view overlay">
+                <img src="img/1588280020-new-balance-530-sneakers-1588280011.jpg" alt="" class="card-img-top">
+                <a href="">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>New Balance</h5>
+                </a>
+
+                <h5>
+                  <strong>
+                    <a href="#" class="dark-grey-text"> New Balance 624
+                      <span class="badge badge-pill danger-color">TOP</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>100$</strong>
+                </h4>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
+          <li class="page-item disabled">
+            <a href="" class="page-link" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a href="" class="page-link" aria-label="Previous">
+              <span aria-hidden="true">1</span>
+            </a>
+          </li>
+          <li class="page-item ">
+            <a href="" class="page-link" aria-label="Previous">
+              <span aria-hidden="true">2</span>
+            </a>
+          </li>
+          <li class="page-item ">
+            <a href="" class="page-link" aria-label="Previous">
+              <span aria-hidden="true">3</span>
+            </a>
+          </li>
+          <li class="page-item ">
+            <a href="" class="page-link" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+
+
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn blue">
+    <div class="pt-4">
+      <a href="#" role="button" class="btn btn-outline-white">SneakerX <i class="fas fa-shopping-basket ml-2"></i></a>
+      
+      <a href="#" role="button" class="btn btn-outline-white">Online Shop <i class="fas fa-shopping-basket ml-2"></i></a>
+
+    </div>
+
+    <hr class="my-4">
+
+    <div class="pb-4">
+      <a href="#">
+        <i class="fab fa-facebook mr-3"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram mr-3"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-telegram mr-3"></i>
+      </a>
+    </div>
+
+    <div class="footer-copyright py-3">
+      SneakerX © 2021
+    </div>
+  </footer>
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script>
+    $( document ).ready(function() {
+    new WOW().init();
+    });
+</script>
+
+</body>
+</html>
