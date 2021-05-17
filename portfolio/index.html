@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansur Isakov | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+    <!-- Loader 3 -->
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="main-opacity">
+        <div id="navbar">
+            <a href="javascript:volid(0)" class="close"
+                onclick="closeNavbar( )">&times;</a>
+            <a href="#portfolio">Projects</a> 
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <span><img src="img/burger.svg" alt="" onclick="openNavbar( )"></span>
+    
+        <nav id="mynav">
+            <ul class="nav-links">
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mansur grid">Mansur Isakov</div>
+    
+        
+        <section id="welcome" class="grid">
+            <div class="welcome-text">
+                <h2>Web-Developer</h2>
+                <p class="leading">I'm Mansur, Web Developer based in Tashkent, Uzbekistan. Currently I'm studying at Westminster International University in Tashkent and my major is Computer Science. Ready to collaborate with you!</p>
+                <a href="img/Profile.pdf" class="button">Download CV</a>
+                <a href="#contact" class="button">Hire Me</a>
+            </div>
+            <div class="welcome-img">
+                <img src="img/IMG_20201130_152710-01.jpeg" alt="my photo">
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <h3>Some of my Projects</h3>
+            <div class="projects grid">
+                <a href="https://uber-eats-beta.netlify.app/">
+                    <img src="img/Project-1.png" alt="Project" class="projects-hover">
+                    <h4>Uber Eats</h4><small> Food Delivery Website</small>
+                </a>
+                <a href="https://sneaker-x.netlify.app/">
+                    <img src="img/Без имени-1.png" alt="Project" class="projects-hover">
+                    <h4>SneakerX</h4><small>Online Sneaker Shop</small>
+                </a>
+                <a href="https://travel-agency-beta.netlify.app/">
+                    <img src="img/travel-agency.png" alt="Project" class="projects-hover">
+                    <h4>Travel Agency</h4><small>Landing Page for Travel Agency</small>
+                </a>
+            </div>
+        </section>
+    
+        <section id="skills">
+            <h3>Things I know</h3>
+            <ul class="grid">
+                <li>
+                    <img src="img/html-5 (1).svg" alt="html">
+                    <h4>HTML</h4>
+                </li>
+                <li>
+                    <img src="img/css-3.svg" alt="css">
+                    <h4>CSS</h4>
+                </li>
+                <li>
+                    <img src="img/python.svg" alt="python">
+                    <h4>Python</h4>
+                </li>
+                <li>
+                    <img src="img/icons8-javascript (2).svg" alt="js">
+                    <h4>JavaScript</h4>
+                </li>
+            </ul>
+        </section>
+    
+        <section id="contact">
+            <h3>Get in Touch</h3>
+            <p class="leading">Leave your Contacts and Message for communication</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <textarea placeholder="Message"></textarea>
+                <button class="button">Send</button>
+            </form>
+        </section>
+    
+        <footer>
+            <div class="grid">
+                <p class="copyright">©️ Copyright 2021 Mansur Isakov</p>
+                <ul class="socials">
+                    <li><a href="https://t.me/MansurIsakov"><img src="img/telegram.svg" alt="telegram"></a></li>
+                    <li><a href="https://www.instagram.com/mansur_isakov_/"><img src="img/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="https://github.com/MansurIsakov"><img src="img/github.svg" alt="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mansur-isakov-a594891b8/"><img src="img/linkedin.svg" alt="linkedin"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
