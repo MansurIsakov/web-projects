@@ -9,6 +9,11 @@
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
+// PROVIDING ACCESS TO WEBSITE
+alert(
+  'Ohayo! This website is not adaptive, so use desktop version! \nTo login use these accounts: \n User: js PIN: 1111 \n User: mi PIN: 4444'
+);
+
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
