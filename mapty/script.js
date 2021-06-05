@@ -2,13 +2,13 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Customizing map marker
-const greenIcon = L.icon({
-  iconUrl: 'components/icon.svg',
+// const greenIcon = L.icon({
+//   iconUrl: 'components/icon.svg',
 
-  iconSize: [45, 45], // size of the icon
-  iconAnchor: [30, 80], // point of the icon which will correspond to marker's location
-  popupAnchor: [-8, -77], // point from which the popup should open relative to the iconAnchor
-});
+//   iconSize: [45, 45], // size of the icon
+//   iconAnchor: [30, 80], // point of the icon which will correspond to marker's location
+//   popupAnchor: [-8, -77], // point from which the popup should open relative to the iconAnchor
+// });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // WORKOUT CLASS
@@ -222,7 +222,7 @@ class App {
   }
 
   _renderWorkoutMarker(workout) {
-    L.marker(workout.coords, { icon: greenIcon })
+    L.marker(workout.coords) // , { icon: greenIcon }
       .addTo(this.#map)
       .bindPopup(
         L.popup({
