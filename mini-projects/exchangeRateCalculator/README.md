@@ -9,3 +9,5 @@ The website gets the exchange rate between specific currencies
 - Display the values for both countries
 - Update values on amount change
 - Swap country rates
+
+{ dateOfDevelopment: "June 2021"; responsive: true; specializedTechnology: 'Vanilla JS'; }
