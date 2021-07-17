@@ -1,6 +1,6 @@
 # 💵 bankist
   
-A landing page for the banking company "BANKIST".
+A landing page for the banking company "BANKIST".<br>
 __🖥 Demo - https://bankist-mansur.netlify.app/__
 
 ## Key Features:
