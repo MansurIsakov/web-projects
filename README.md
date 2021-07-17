@@ -1,4 +1,4 @@
-# 📚 small-projects
+# 📚 web-projects
 
 This is a collection of small web projects that I developed during online tutorials or on my own to practice my skills. These projects are entirely based on HTML, CSS, and JavaScript and do not include any server components.
 
