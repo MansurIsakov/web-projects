@@ -1,5 +1,8 @@
-<sneakerX>
+# 👟 sneakerX
 
-Website for sneaker shop using bootstrap.
+Website for sneaker shop using bootstrap.<br>
+__🖥 Demo - https://sneaker-x.netlify.app/__
 
-{ dateOfDevelopment: "Sep 2020"; responsive: true; specializedTechnology: 'HTML / CSS'; }
+## Key Features:
+- Bootstrap
+- CSS
