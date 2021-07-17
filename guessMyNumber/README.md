@@ -1,5 +1,7 @@
-<guessMyNumber>
+# 🕹 guessMyNumber
 
-This web game was designed to practice javaScript under the course of Jonas Schmedtmann.
+Simple game using JS.<br>
+__🖥 Demo - https://guess-my-numbers.netlify.app/__
 
-{ dateOfDevelopment: "Jan 2021"; responsive: false; specializedTechnology: 'js'; }
+## Key Features:
+- JS
