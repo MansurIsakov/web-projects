@@ -8,7 +8,7 @@ __🖥 Demo - https://bankistapp-mansur.netlify.app/__
  1. User - js PIN - 1111
  2. User - mi PIN - 4444
 
-### Key Features:
+## Key Features:
 
 - JS
 - DOM manipulation
