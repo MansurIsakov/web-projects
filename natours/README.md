@@ -1,5 +1,11 @@
-<Natours>
+# 🌳 Natours
 
-This project was created during the CSS course of Jonas Schmedtmann.
+A landing page for the travel agency. <br>
+__🖥 Demo - https://natours-mansur.netlify.app/__
 
-{ dateOfDevelopment: "May 2021"; responsive: true; specializedTechnology: 'CSS'; }
+## Key Features:
+
+- Responsive design
+- CSS only
+- Modern design
+
