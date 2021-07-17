@@ -1,6 +1,6 @@
 # 💸 bankistApp
 
-Web application of the company "BANKIST" where the customers can make transitions and control their money.
+Web application of the company "BANKIST" where the customers can make transitions and control their money.<br>
 __🖥 Demo - https://bankistapp-mansur.netlify.app/__
 
 
