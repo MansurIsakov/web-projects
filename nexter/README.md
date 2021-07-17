@@ -1,5 +1,9 @@
-<nexter>
+# 🏠 nexter
   
-This project was designed to practice CSS Grid Layouts under the course of Jonas Schmedtmann. The project displays a website for purchasing luxury apartments.
+The project displays a website for purchasing luxury apartments.<br>
+__🖥 Demo - https://nexter-mansur.netlify.app/__
 
-{ dateOfDevelopment: "May 2021"; responsive: true; specializedTechnology: 'CSS Grid Layouts'; }
+## Key Features:
+- Responsive design
+- Modern design
+- Grid layouts
