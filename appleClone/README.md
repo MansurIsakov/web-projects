@@ -1,8 +1,10 @@
-# appleClone
+# 💻 appleClone
 
-Apple eCommerce clone.
+Apple eCommerce clone. <br>
+__🖥 Demo - https://appleclone-mansur.netlify.app/__
 
-Features: 
+
+## Key Features: 
 - 3D Figure
 - Slider
 - MacBook Animation
