@@ -1,5 +1,10 @@
-<Trillo>
+# ✈️ Trillo
 
-This project was designed to practice CSS FlexBox Technology under the course of Jonas Schmedtmann. The project displays an example page of web booking app.
+The website displays a landing page of booking agency. <br>
+__🖥 Demo - https://trillo-mansur.netlify.app/__
 
-{ dateOfDevelopment: "May 2021"; responsive: true; specializedTechnology: 'CSS Flexbox'; }
+## Key Features:
+- Flexbox
+- Sass
+- Responsive design
+- Modern design
