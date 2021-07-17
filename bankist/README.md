@@ -1,5 +1,12 @@
-<bankist>
+# 💵 bankist
   
-This project was designed to practice DOM Manipulations and Events under the course of Jonas Schmedtmann. The project displays a commercial page of bankistApp.
+A landing page for the banking company "BANKIST".
+__🖥 Demo - https://bankist-mansur.netlify.app/__
 
-{ dateOfDevelopment: "May 2021"; responsive: true; specializedTechnology: 'JS, DOM'; }
+## Key Features:
+
+- DOM
+- Responsive & Adaptive
+- Slider
+- Tabs
+- Animation
