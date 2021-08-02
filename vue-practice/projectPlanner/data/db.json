@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 2,
+      "title": "Make makaron",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "title": "Make a new Website",
+      "details": "Need to make brand new website",
+      "complete": false,
+      "id": 3
+    }
+  ]
+}
