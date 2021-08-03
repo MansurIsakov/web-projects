@@ -1,19 +1,17 @@
-# live-chat
+# 👨🏽‍💻 liveChat
 
-## Project setup
-```
-npm install
-```
+The full live chat application using Vue.js for front-end and firebase database for backend. <br>
+__🖥 Demo - https://live-chat-mansur.web.app__
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### How To Use:
+Signup to start chating! To send message press enter key.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Key Features:
+- Vue
+- Vue Router
+- Vue Components
+- Vue Cli
+- Firebase
+- Firebase Hosting
+- Babel
+- Git
