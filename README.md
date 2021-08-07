@@ -19,3 +19,4 @@ This is a collection of small web projects that I developed during online tutori
 11. portfolio (old version)
 12. sneakerX
 13. trillo
+14. vue-practice
