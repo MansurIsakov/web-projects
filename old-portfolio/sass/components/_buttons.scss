@@ -1,0 +1,51 @@
+// BUTTONS STYLING //
+
+// MAIN BTN
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-color: $color-primary-light;
+    color: $color-secondary-1;
+    font-size: $button-font-size;
+    font-family: "Monument Extended Bold";
+    padding: 1.4rem 1.8rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 0.4rem $box-shadow;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  &:hover {
+    transform: scale(1.09);
+    background: radial-gradient(circle, $color-secondary-4, #2a2a2a);
+    color: $color-white;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.btn-secondary {
+  &,
+  &:link,
+  &:visited {
+    background-color: $color-primary-light;
+    color: $color-secondary-1;
+    font-size: $default-font-size;
+    font-family: "Univia Pro Light";
+    text-transform: uppercase;
+    padding: 0.9rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem 0.4rem $box-shadow;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  &:hover {
+    transform: translateY(-10%);
+    filter: brightness(90%);
+    color: $color-secondary-3;
+  }
+}

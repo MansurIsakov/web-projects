@@ -1,0 +1,48 @@
+// Utilities //
+
+// CENTER TEXT
+.u-center-text {
+  text-align: center;
+  margin: 5rem;
+}
+.u-center {
+  margin: 0 auto;
+  display: block;
+}
+
+.u-flex {
+  display: flex;
+  justify-content: center;
+}
+
+// MARGIN BOTTOM
+
+.u-margin-bottom-large {
+  margin-bottom: 20rem;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+// MARGIN TOP
+.u-margin-top-large {
+  margin-top: 17rem;
+}
+.u-margin-top-big {
+  margin-top: 15rem;
+}
+.u-margin-top-medium-2 {
+  margin-top: 13rem !important;
+}
+.u-margin-top-medium {
+  margin-top: 10rem;
+}
+.u-margin-top-small {
+  margin-top: 2rem;
+}

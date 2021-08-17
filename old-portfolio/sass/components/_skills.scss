@@ -1,0 +1,739 @@
+.skills {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+
+  a {
+    color: inherit;
+  }
+  &__filter {
+    margin-top: 5.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 85px;
+
+    .btn-secondary:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .active {
+      filter: brightness(90%);
+      color: $color-secondary-3;
+      transform: translateY(-10%);
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.skills-tablet {
+  display: none;
+}
+.html,
+.css,
+.js,
+.npm,
+.api,
+.node,
+.figma,
+.ps,
+.canva,
+.ru,
+.uz,
+.en {
+  filter: url("#shadowed-goo");
+}
+
+.html-item,
+.html-open-button,
+.css-item,
+.css-open-button,
+.js-item,
+.js-open-button,
+.npm-item,
+.npm-open-button,
+.api-item,
+.api-open-button,
+.node-item,
+.node-open-button,
+.ps-item,
+.ps-open-button,
+.canva-item,
+.canva-open-button,
+.figma-item,
+.figma-open-button,
+.en-item,
+.en-open-button,
+.ru-item,
+.ru-open-button,
+.uz-item,
+.uz-open-button {
+  background: #f5efe1;
+  border-radius: 100%;
+  position: absolute;
+  color: #555;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+.html-item,
+.css-item,
+.js-item,
+.npm-item,
+.node-item,
+.api-item,
+.ps-item,
+.canva-item,
+.figma-item,
+.ru-item,
+.en-item,
+.uz-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.html-item,
+.npm-item,
+.figma-item,
+.en-item {
+  margin-left: -50px;
+}
+
+.css-item,
+.js-item,
+.node-item,
+.api-item,
+.canva-item,
+.ps-item,
+.ru-item,
+.uz-item {
+  margin-left: 50px;
+}
+
+.html-open,
+.css-open,
+.js-open,
+.npm-open,
+.api-open,
+.node-open,
+.ps-open,
+.canva-open,
+.figma-open,
+.en-open,
+.uz-open,
+.ru-open {
+  display: none;
+}
+
+.skill__img {
+  width: 125px;
+  margin-top: 40px;
+}
+.npm .skill__img {
+  margin-top: 80px;
+}
+.figma .skill__img {
+  width: 80px;
+}
+.ps .skill__img {
+  width: 100px;
+  margin-top: 5rem;
+}
+.ru .skill__img {
+  border: 1px solid $box-shadow;
+  border-radius: 50%;
+}
+
+.js__img {
+  border-radius: 10px;
+}
+
+.html,
+.css,
+.js,
+.npm,
+.node,
+.api,
+.ps,
+.en,
+.uz,
+.ru,
+.canva,
+.figma {
+  position: absolute;
+  left: 50%;
+  padding-top: 20px;
+  padding-left: 190px;
+  width: 380px;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-align: left;
+  color: $color-secondary-4;
+
+  i {
+    line-height: 1.2rem;
+    font-family: "Univia Pro Light";
+    width: 95%;
+  }
+}
+
+.css,
+.js,
+.node,
+.api,
+.ru,
+.uz,
+.canva,
+.ps {
+  margin-top: 350px;
+}
+
+.html,
+.npm,
+.en,
+.figma {
+  margin-left: -175px;
+}
+
+.css,
+.node,
+.ru,
+.ps {
+  margin-left: -560px;
+}
+
+.js,
+.api,
+.uz,
+.canva {
+  margin-left: 10px;
+}
+
+.html-item:nth-child(3),
+.css-item:nth-child(3),
+.js-item:nth-child(3),
+.npm-item:nth-child(3),
+.node-item:nth-child(3),
+.api-item:nth-child(3),
+.ps-item:nth-child(3),
+.canva-item:nth-child(3),
+.figma-item:nth-child(3),
+.uz-item:nth-child(3),
+.ru-item:nth-child(3),
+.en-item:nth-child(3) {
+  transition-duration: 70ms;
+}
+
+.html-item:nth-child(4),
+.css-item:nth-child(4),
+.js-item:nth-child(4) .npm-item:nth-child(4),
+.node-item:nth-child(4),
+.api-item:nth-child(4),
+.ps-item:nth-child(4),
+.canva-item:nth-child(4),
+.figma-item:nth-child(4),
+.uz-item:nth-child(4),
+.ru-item:nth-child(4),
+.en-item:nth-child(4) {
+  transition-duration: 130ms;
+}
+
+.html-item:nth-child(5),
+.css-item:nth-child(5),
+.js-item:nth-child(5),
+.npm-item:nth-child(5),
+.node-item:nth-child(5),
+.api-item:nth-child(5),
+.ps-item:nth-child(5),
+.canva-item:nth-child(5),
+.figma-item:nth-child(5),
+.uz-item:nth-child(5),
+.ru-item:nth-child(5),
+.en-item:nth-child(5) {
+  transition-duration: 190ms;
+}
+
+.html-item:nth-child(6),
+.css-item:nth-child(6),
+.js-item:nth-child(6),
+.npm-item:nth-child(6),
+.node-item:nth-child(6),
+.api-item:nth-child(6),
+.ps-item:nth-child(6),
+.canva-item:nth-child(6),
+.figma-item:nth-child(6),
+.uz-item:nth-child(6),
+.ru-item:nth-child(6),
+.en-item:nth-child(6) {
+  transition-duration: 250ms;
+}
+
+.html-item:nth-child(7),
+.css-item:nth-child(7),
+.js-item:nth-child(7),
+.npm-item:nth-child(7),
+.node-item:nth-child(7),
+.api-item:nth-child(7),
+.ps-item:nth-child(7),
+.canva-item:nth-child(7),
+.figma-item:nth-child(7),
+.uz-item:nth-child(7),
+.ru-item:nth-child(7),
+.en-item:nth-child(7) {
+  transition-duration: 310ms;
+}
+
+.html-open-button,
+.css-open-button,
+.js-open-button,
+.npm-open-button,
+.node-open-button,
+.api-open-button,
+.figma-open-button,
+.ps-open-button,
+.canva-open-button,
+.en-open-button,
+.ru-open-button,
+.uz-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.html-open-button,
+.npm-open-button,
+.figma-open-button,
+.en-open-button {
+  margin-left: -100px;
+}
+
+.html-open-button:hover,
+.css-open-button:hover,
+.js-open-button:hover,
+.npm-open-button:hover,
+.node-open-button:hover,
+.api-open-button:hover,
+.ps-open-button:hover,
+.canva-open-button:hover,
+.figma-open-button:hover,
+.en-open-button:hover,
+.ru-open-button:hover,
+.uz-open-button:hover {
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+}
+
+.html-open:checked + .html-open-button,
+.css-open:checked + .css-open-button,
+.js-open:checked + .js-open-button,
+.npm-open:checked + .npm-open-button,
+.node-open:checked + .node-open-button,
+.api-open:checked + .api-open-button,
+.figma-open:checked + .figma-open-button,
+.ps-open:checked + .ps-open-button,
+.canva-open:checked + .canva-open-button,
+.en-open:checked + .en-open-button,
+.ru-open:checked + .ru-open-button,
+.uz-open:checked + .uz-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.html-open:checked ~ .html-item,
+.css-open:checked ~ .css-item,
+.js-open:checked ~ .js-item,
+.npm-open:checked ~ .npm-item,
+.node-open:checked ~ .node-item,
+.api-open:checked ~ .api-item,
+.figma-open:checked ~ .figma-item,
+.ps-open:checked ~ .ps-item,
+.canva-open:checked ~ .js-item,
+.en-open:checked ~ .en-item,
+.ru-open:checked ~ .ru-item,
+.uz-open:checked ~ .uz-item {
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.html-open:checked ~ .html-item:nth-child(3),
+.css-open:checked ~ .css-item:nth-child(3),
+.js-open:checked ~ .js-item:nth-child(3),
+.npm-open:checked ~ .npm-item:nth-child(3),
+.node-open:checked ~ .node-item:nth-child(3),
+.api-open:checked ~ .api-item:nth-child(3),
+.figma-open:checked ~ .figma-item:nth-child(3),
+.canva-open:checked ~ .canva-item:nth-child(3),
+.ps-open:checked ~ .ps-item:nth-child(3),
+.en-open:checked ~ .en-item:nth-child(3),
+.ru-open:checked ~ .ru-item:nth-child(3),
+.uz-open:checked ~ .uz-item:nth-child(3) {
+  transition-duration: 160ms;
+}
+
+.html-open:checked ~ .html-item:nth-child(4),
+.css-open:checked ~ .css-item:nth-child(4),
+.js-open:checked ~ .js-item:nth-child(4),
+.npm-open:checked ~ .npm-item:nth-child(4),
+.node-open:checked ~ .node-item:nth-child(4),
+.api-open:checked ~ .api-item:nth-child(4),
+.figma-open:checked ~ .figma-item:nth-child(4),
+.canva-open:checked ~ .canva-item:nth-child(4),
+.ps-open:checked ~ .ps-item:nth-child(4),
+.en-open:checked ~ .en-item:nth-child(4),
+.ru-open:checked ~ .ru-item:nth-child(4),
+.uz-open:checked ~ .uz-item:nth-child(4) {
+  transition-duration: 240ms;
+}
+
+.html-open:checked ~ .html-item:nth-child(5),
+.css-open:checked ~ .css-item:nth-child(5),
+.js-open:checked ~ .js-item:nth-child(5),
+.npm-open:checked ~ .npm-item:nth-child(5),
+.node-open:checked ~ .node-item:nth-child(5),
+.api-open:checked ~ .api-item:nth-child(5),
+.figma-open:checked ~ .figma-item:nth-child(5),
+.canva-open:checked ~ .canva-item:nth-child(5),
+.ps-open:checked ~ .ps-item:nth-child(5),
+.en-open:checked ~ .en-item:nth-child(5),
+.ru-open:checked ~ .ru-item:nth-child(5),
+.uz-open:checked ~ .uz-item:nth-child(5) {
+  transition-duration: 320ms;
+}
+
+.html-open:checked ~ .html-item:nth-child(6),
+.css-open:checked ~ .css-item:nth-child(6),
+.js-open:checked ~ .js-item:nth-child(6),
+.npm-open:checked ~ .npm-item:nth-child(6),
+.node-open:checked ~ .node-item:nth-child(6),
+.api-open:checked ~ .api-item:nth-child(6),
+.figma-open:checked ~ .figma-item:nth-child(6),
+.canva-open:checked ~ .canva-item:nth-child(6),
+.ps-open:checked ~ .ps-item:nth-child(6),
+.en-open:checked ~ .en-item:nth-child(6),
+.ru-open:checked ~ .ru-item:nth-child(6),
+.uz-open:checked ~ .uz-item:nth-child(6) {
+  transition-duration: 400ms;
+}
+
+.html-open:checked ~ .html-item:nth-child(7),
+.css-open:checked ~ .css-item:nth-child(7),
+.js-open:checked ~ .js-item:nth-child(7),
+.npm-open:checked ~ .npm-item:nth-child(7),
+.node-open:checked ~ .node-item:nth-child(7),
+.api-open:checked ~ .api-item:nth-child(7),
+.figma-open:checked ~ .figma-item:nth-child(7),
+.canva-open:checked ~ .canva-item:nth-child(7),
+.ps-open:checked ~ .ps-item:nth-child(7),
+.en-open:checked ~ .en-item:nth-child(7),
+.ru-open:checked ~ .ru-item:nth-child(7),
+.uz-open:checked ~ .uz-item:nth-child(7) {
+  transition-duration: 480ms;
+}
+
+/* HTML childs Position */
+.html-open:checked ~ .html-item:nth-child(3),
+.npm-open:checked ~ .npm-item:nth-child(3),
+.figma-open:checked ~ .figma-item:nth-child(3),
+.en-open:checked ~ .en-item:nth-child(3) {
+  transform: translate3d(198px, 11px, 0);
+}
+
+.html-open:checked ~ .html-item:nth-child(4),
+.npm-open:checked ~ .npm-item:nth-child(4),
+.figma-open:checked ~ .figma-item:nth-child(4),
+.en-open:checked ~ .en-item:nth-child(4) {
+  transform: translate3d(158px, 155px, 0);
+}
+
+.html-open:checked ~ .html-item:nth-child(5),
+.npm-open:checked ~ .npm-item:nth-child(5),
+.figma-open:checked ~ .figma-item:nth-child(5),
+.en-open:checked ~ .en-item:nth-child(5) {
+  transform: translate3d(2px, 225px, 0);
+}
+
+.html-open:checked ~ .html-item:nth-child(6),
+.npm-open:checked ~ .npm-item:nth-child(6),
+.figma-open:checked ~ .figma-item:nth-child(6),
+.en-open:checked ~ .en-item:nth-child(6) {
+  transform: translate3d(-161px, 155px, 0);
+}
+
+.html-open:checked ~ .html-item:nth-child(7),
+.npm-open:checked ~ .npm-item:nth-child(7),
+.figma-open:checked ~ .figma-item:nth-child(7),
+.en-open:checked ~ .en-item:nth-child(7) {
+  transform: translate3d(-194px, 11px, 0);
+}
+
+/* CSS childs Position */
+.css-open:checked ~ .css-item:nth-child(3),
+.node-open:checked ~ .node-item:nth-child(3),
+.ps-open:checked ~ .ps-item:nth-child(3),
+.ru-open:checked ~ .ru-item:nth-child(3) {
+  transform: translate3d(20px, -119px, 0);
+}
+
+.css-open:checked ~ .css-item:nth-child(4),
+.node-open:checked ~ .node-item:nth-child(4),
+.ps-open:checked ~ .ps-item:nth-child(4),
+.ru-open:checked ~ .ru-item:nth-child(4) {
+  transform: translate3d(124px, -58px, 0);
+}
+
+.css-open:checked ~ .css-item:nth-child(5),
+.node-open:checked ~ .node-item:nth-child(5),
+.ps-open:checked ~ .ps-item:nth-child(5),
+.ru-open:checked ~ .ru-item:nth-child(5) {
+  transform: translate3d(170px, 52px, 0);
+}
+
+.css-open:checked ~ .css-item:nth-child(6),
+.node-open:checked ~ .node-item:nth-child(6),
+.ps-open:checked ~ .ps-item:nth-child(6),
+.ru-open:checked ~ .ru-item:nth-child(6) {
+  transform: translate3d(124px, 162px, 0);
+}
+
+.css-open:checked ~ .css-item:nth-child(7),
+.node-open:checked ~ .node-item:nth-child(7),
+.ps-open:checked ~ .ps-item:nth-child(7),
+.ru-open:checked ~ .ru-item:nth-child(7) {
+  transform: translate3d(20px, 220px, 0);
+}
+
+/* JS childs Position */
+.js-open:checked ~ .js-item:nth-child(3),
+.api-open:checked ~ .api-item:nth-child(3),
+.canva-open:checked ~ .canva-item:nth-child(3),
+.uz-open:checked ~ .uz-item:nth-child(3) {
+  transform: translate3d(-20px, -119px, 0);
+}
+
+.js-open:checked ~ .js-item:nth-child(4),
+.api-open:checked ~ .api-item:nth-child(4),
+.canva-open:checked ~ .canva-item:nth-child(4),
+.uz-open:checked ~ .uz-item:nth-child(4) {
+  transform: translate3d(-130px, -58px, 0);
+}
+
+.js-open:checked ~ .js-item:nth-child(5),
+.api-open:checked ~ .api-item:nth-child(5),
+.canva-open:checked ~ .canva-item:nth-child(5),
+.uz-open:checked ~ .uz-item:nth-child(5) {
+  transform: translate3d(-174px, 52px, 0);
+}
+
+.js-open:checked ~ .js-item:nth-child(6),
+.api-open:checked ~ .api-item:nth-child(6),
+.canva-open:checked ~ .canva-item:nth-child(6),
+.uz-open:checked ~ .uz-item:nth-child(6) {
+  transform: translate3d(-125px, 162px, 0);
+}
+
+.js-open:checked ~ .js-item:nth-child(7),
+.api-open:checked ~ .api-item:nth-child(7),
+.canva-open:checked ~ .canva-item:nth-child(7),
+.uz-open:checked ~ .uz-item:nth-child(7) {
+  transform: translate3d(-20px, 220px, 0);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ADAPTIVES
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include respond(tab-port) {
+  .js,
+  .api,
+  .uz,
+  .canva {
+    margin-left: -20px;
+  }
+}
+@include respond(tab) {
+  .skills-desktop {
+    display: none;
+  }
+  .skills__content--tablet {
+    display: none;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .skills-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-tablet {
+    width: 70rem;
+    height: 20rem;
+    display: flex;
+    flex-basis: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-primary-light;
+    box-shadow: 0px 0px 4px $box-shadow;
+    border-radius: 15rem;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    .npm-tablet {
+      margin-top: 8rem;
+    }
+    &__icon {
+      box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+    &__text {
+      width: 65%;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      ul li {
+        color: $color-black;
+        text-align: left;
+        font-family: "Univia Pro Light";
+        font-size: 1.4rem;
+        line-height: 3rem;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          margin-right: 3.5rem;
+        }
+      }
+    }
+  }
+}
+@include respond(tab-mini) {
+  .skills {
+    margin-top: 40rem;
+  }
+  .box-tablet {
+    max-width: 60rem;
+    height: 18rem;
+
+    .npm-tablet {
+      margin-top: 7rem;
+    }
+    &__icon {
+      width: 18rem;
+      height: 18rem;
+
+      img {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+    &__text {
+      ul li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .skills__filter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 13rem auto;
+    width: 14rem;
+    height: 3rem;
+
+    .btn-secondary:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 1rem;
+    }
+
+    .active {
+      filter: brightness(90%);
+      color: $color-secondary-3;
+      transform: translateY(-10%);
+    }
+  }
+
+  .box-tablet {
+    width: 26.5rem;
+    height: 50rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 4px $box-shadow;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    .npm-tablet {
+      margin-top: 10rem;
+    }
+    &__icon {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+
+      img {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+    &__text {
+      width: 100%;
+      margin-top: 3rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+      }
+      ul li {
+        &:not(:last-child) {
+          margin-right: 0rem;
+        }
+      }
+    }
+  }
+}

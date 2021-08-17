@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/main.scss css/style.css"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Mansur Isakov",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^6.7.5"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

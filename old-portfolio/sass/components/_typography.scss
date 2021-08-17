@@ -1,0 +1,168 @@
+// Importing Font Files //
+@font-face {
+  font-family: "Monument Extended";
+  src: url("/components/font/MonumentExtended/MonumentExtended-Regular.otf");
+}
+@font-face {
+  font-family: "Monument Extended Bold";
+  src: url("/components/font/MonumentExtended/MonumentExtended-Ultrabold.otf");
+}
+@font-face {
+  font-family: "Univia Pro Black";
+  src: url("/components/font/Univia Pro/UniviaPro-Black.otf");
+}
+@font-face {
+  font-family: "Univia Pro Bold";
+  src: url("/components/font/Univia Pro/UniviaPro-Bold.otf");
+}
+@font-face {
+  font-family: "Univia Pro Book";
+  src: url("/components/font/Univia Pro/UniviaPro-Book.otf");
+}
+@font-face {
+  font-family: "Univia Pro Light";
+  src: url("/components/font/Univia Pro/UniviaPro-Light.otf");
+}
+@font-face {
+  font-family: "Univia Pro Medium";
+  src: url("/components/font/Univia Pro/UniviaPro-Medium.otf");
+}
+@font-face {
+  font-family: "Univia Pro";
+  src: url("/components/font/Univia Pro/UniviaPro-Regular.otf");
+}
+@font-face {
+  font-family: "Univia Pro Thin";
+  src: url("/components/font/Univia Pro/UniviaPro-Thin.otf");
+}
+@font-face {
+  font-family: "Univia Pro Ultra";
+  src: url("/components/font/Univia Pro/UniviaPro-Ultra.otf");
+}
+@font-face {
+  font-family: "Univia Pro UltraLight";
+  src: url("/components/font/Univia Pro/UniviaPro-UltraLight.otf");
+}
+
+body {
+  font-family: "Monument Extended", sans-serif;
+}
+
+// Typography //
+
+// Header Text
+.heading-primary {
+  color: $color-secondary-2;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 2.5rem;
+  // backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
+
+  &--main {
+    // display: block;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0rem;
+    line-height: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab) {
+      font-size: 4.5rem;
+    }
+
+    @include respond(tab-mini) {
+      font-size: 4rem;
+      margin-bottom: 0rem;
+    }
+    @include respond(phone-l) {
+      font-size: 3rem;
+    }
+    @include respond(phone-m) {
+      font-size: 2.5rem;
+    }
+    @include respond(phone-s) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &--sub {
+    // display: block;
+    font-family: "Univia Pro Bold", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include respond(tab) {
+      font-size: 2.3rem;
+    }
+
+    @include respond(tab-mini) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone-l) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// Sections Text
+.heading-secondary {
+  font-size: $sections-font-size;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  color: $color-secondary-2;
+  letter-spacing: 0.145em;
+  line-height: 4.2rem;
+
+  @include respond(tab) {
+    font-size: 3rem;
+  }
+  @include respond(phone-l) {
+    font-size: 2.5rem;
+  }
+}
+
+// Team`s Text
+.heading-3 {
+  font-family: "Univia Pro Bold";
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 3.8rem;
+  color: $color-secondary-3;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+// BIO Text
+.heading-4 {
+  font-family: "Univia Pro Medium";
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+  color: $color-secondary-4;
+
+  @include respond(tab) {
+    font-size: 2.2rem;
+  }
+}
+
+// ALL Paragraph Text
+.paragraph {
+  font-size: $default-font-size;
+  font-family: "Univia Pro Light";
+  color: $color-secondary-4;
+  line-height: 2.7rem;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
+}

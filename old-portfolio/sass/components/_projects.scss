@@ -1,0 +1,107 @@
+.projects {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  text-align: center;
+
+  a.btn-secondary {
+    cursor: pointer;
+  }
+}
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__item {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: $color-primary-light;
+    transition: background-color 0.7s;
+
+    &:hover {
+      background-color: #e8e1d2;
+    }
+
+    img {
+      max-width: 120%;
+      text-align: center;
+      display: block;
+      opacity: 1;
+      // cursor: auto;
+    }
+  }
+
+  .active {
+    width: 30rem;
+    height: 30rem;
+    transform: translateY(-4rem);
+
+    img {
+      width: 50rem;
+      text-align: center;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ADAPTIVES
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@include respond(desktop) {
+  .projects {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@include respond(laptop-m) {
+  .projects {
+    margin-top: 10rem;
+  }
+}
+@include respond(tab-port) {
+  .projects {
+    margin-top: 0rem;
+  }
+}
+
+@include respond(tab-mini) {
+  .projects {
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .project {
+    flex-direction: column;
+    margin-top: 5rem;
+
+    &__item {
+      width: 30rem;
+      height: 30rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .active {
+      transform: translateY(0rem);
+    }
+  }
+}
+@include respond(phone-l) {
+  .project {
+    &__item {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    .active {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}

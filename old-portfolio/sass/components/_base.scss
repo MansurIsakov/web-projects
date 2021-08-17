@@ -1,0 +1,98 @@
+// UNIVERSAL SETTINGS //
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-primary;
+  overflow-x: hidden;
+  transition: transform 0.25s;
+  will-change: transform;
+}
+
+// Setting fonst size with rem
+html {
+  // This defines what 1rem is
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(desktop) {
+    font-size: 75%; // 1 rem = 12px, 12/16 =
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+}
+
+// SELECTION THE ITEMS (TEXT)
+::selection {
+  background-color: $color-primary-light;
+  color: $color-black;
+}
+
+// Container
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+  position: relative;
+
+  @include respond(laptop-m) {
+    max-width: 100rem;
+  }
+
+  @include respond(tab) {
+    max-width: 100%;
+    margin: 0 1.5rem;
+  }
+}
+
+// Fixing default settings of a && li
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+// Removing outline from btns
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+// No Scroll While NAV on
+.noScroll {
+  overflow-y: hidden !important;
+}
+
+// cursor
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2.5px solid $color-secondary-1;
+  border-radius: 50%;
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+
+  @include respond(laptop-m) {
+    opacity: 0;
+  }
+}

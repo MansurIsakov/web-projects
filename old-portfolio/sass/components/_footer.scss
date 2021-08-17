@@ -1,0 +1,508 @@
+.contacts {
+  width: 100%;
+  //   height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20rem;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+  align-items: center;
+
+  &__1,
+  &__2,
+  &__3 {
+    display: flex;
+    background-color: $color-primary-light;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+
+    input[type="text"],
+    input[type="email"] {
+      border: none;
+      background-color: $color-primary;
+      border-radius: 1.5rem;
+      padding: 1rem 1rem;
+      box-shadow: 0px 3px 4px $box-shadow;
+
+      font-family: "Univia Pro Light";
+
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $color-secondary-4;
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $color-secondary-4;
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $color-secondary-4;
+      }
+    }
+    input[type="email"] {
+      width: 27.5rem;
+    }
+    input[type="text"] {
+      width: 19.2rem;
+    }
+  }
+  &__1 {
+    width: 25rem;
+    height: 25rem;
+    margin-left: 30rem;
+  }
+  &__2 {
+    width: 35rem;
+    height: 35rem;
+    margin-right: 45rem;
+    margin-top: -8rem;
+  }
+  &__3 {
+    width: 50rem;
+    height: 50rem;
+    margin-left: 45rem;
+    margin-top: -8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    textarea {
+      border: none;
+      background-color: $color-primary;
+      border-radius: 1.5rem;
+      padding: 1rem 1rem;
+      box-shadow: 0px 4px 4px $box-shadow;
+      width: 38.5rem;
+      height: 20rem;
+      margin: 17rem 0 3.2rem 0;
+      font-family: "Univia Pro Light";
+      resize: none;
+    }
+
+    button {
+      background-color: $color-primary;
+      border: none;
+      box-shadow: 0px 4px 4px $box-shadow;
+      padding: 0.9rem 1.7rem;
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      border-radius: 1.5rem;
+      cursor: pointer;
+
+      img {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+}
+
+.go-top {
+  position: absolute;
+  right: 0;
+  bottom: -12rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-2%);
+    filter: brightness(85%);
+  }
+}
+.socials {
+  position: absolute;
+  left: -20rem;
+  bottom: -25rem;
+  background-color: $color-primary-light;
+  border-radius: 50%;
+  width: 70rem;
+  height: 70rem;
+
+  &__icons {
+    position: relative;
+    display: inline-block;
+  }
+
+  .fab {
+    color: $color-icons;
+    font-size: 3rem;
+    margin-right: 8.1rem;
+    display: inline-block;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-10%);
+      filter: brightness(85%);
+      box-shadow: 0px 4px 4px $box-shadow;
+    }
+
+    &:active {
+      transform: translateY(5%);
+    }
+  }
+
+  .fa-github {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 11.5rem;
+    left: -5rem;
+  }
+  .fa-instagram {
+    width: 100%;
+    position: absolute;
+    top: 22rem;
+    left: -5rem;
+  }
+  .fa-telegram {
+    width: 100%;
+    position: absolute;
+    top: 22rem;
+    left: 7rem;
+  }
+  .fa-discord {
+    width: 100%;
+    position: absolute;
+    top: 32.7rem;
+    left: -5rem;
+  }
+  .fa-linkedin-in {
+    width: 100%;
+    position: absolute;
+    top: 32.7rem;
+    left: 7rem;
+  }
+  .fa-facebook {
+    width: 100%;
+    position: absolute;
+    top: 32.7rem;
+    left: 19rem;
+  }
+}
+.submit-btn {
+  display: none;
+}
+.go-top-phone {
+  display: none;
+}
+.socials-phone {
+  display: none;
+}
+.socials__icons-phone {
+  display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ADAPTIVES
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 50em) {
+  .contacts {
+    padding-bottom: 32rem;
+  }
+
+  .socials {
+    bottom: -25rem;
+  }
+
+  .go-top {
+    bottom: -25rem;
+    right: 4rem;
+  }
+}
+@include respond(desktop) {
+  .contacts {
+    margin-top: 4rem;
+  }
+}
+@include respond(tab) {
+  .cta {
+    margin-top: 8rem;
+
+    &__1,
+    &__2,
+    &__3 {
+      input[type="email"] {
+        width: 22.5rem;
+      }
+      input[type="text"] {
+        width: 14.2rem;
+      }
+    }
+    &__1 {
+      width: 20rem;
+      height: 20rem;
+    }
+    &__2 {
+      width: 30rem;
+      height: 30rem;
+      margin-right: 40rem;
+    }
+    &__3 {
+      width: 40rem;
+      height: 40rem;
+      margin-left: 32rem;
+
+      textarea {
+        width: 28.5rem;
+        height: 10rem;
+        margin: 15rem 0 3.2rem 0;
+      }
+    }
+  }
+  .socials {
+    bottom: -23rem;
+    width: 60rem;
+    height: 60rem;
+    .fa-github {
+      top: 7.5rem;
+      left: -5rem;
+    }
+    .fa-instagram {
+      top: 18rem;
+      left: -5rem;
+    }
+    .fa-telegram {
+      top: 18rem;
+      left: 7rem;
+    }
+    .fa-discord {
+      top: 28.7rem;
+      left: -5rem;
+    }
+    .fa-linkedin-in {
+      top: 28.7rem;
+      left: 7rem;
+    }
+    .fa-facebook {
+      top: 28.7rem;
+      left: 19rem;
+    }
+  }
+
+  .go-top {
+    bottom: -28rem;
+    right: 2rem;
+  }
+}
+@include respond(tab-mini) {
+  .contacts {
+    padding-bottom: 15rem !important;
+  }
+
+  .cta {
+    &__2 {
+      margin-right: 30rem;
+      margin-top: 0rem;
+    }
+    &__3 {
+      margin-left: 20rem;
+      margin-top: 0rem;
+      margin-bottom: 20rem;
+
+      textarea {
+        margin: 14rem 0 3.2rem 0;
+      }
+    }
+  }
+  .socials {
+    left: -25rem;
+    bottom: -33rem;
+    width: 70rem;
+    height: 70rem;
+  }
+
+  .go-top {
+    bottom: -11rem;
+  }
+}
+@include respond(phone) {
+  .contacts {
+    margin-top: 10rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .cta {
+    margin-top: 4rem;
+    display: block;
+    text-align: right;
+    position: relative;
+
+    &__1,
+    &__2,
+    &__3 {
+      input[type="email"] {
+        width: 40rem;
+        height: 5rem;
+        margin-right: 30rem;
+        position: absolute;
+      }
+      input[type="text"] {
+        width: 40rem;
+        height: 5rem;
+        position: absolute;
+        margin-left: 35rem;
+      }
+    }
+    &__1 {
+      width: 15rem;
+      height: 15rem;
+      margin: 0rem;
+    }
+    &__2 {
+      width: 20rem;
+      height: 20rem;
+      margin-right: 0rem;
+      margin-left: auto;
+    }
+    &__3 {
+      width: 25rem;
+      height: 25rem;
+      margin-left: 0rem;
+      margin-right: 0;
+      margin-top: 0rem;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      textarea {
+        position: absolute;
+        width: 40rem;
+        height: 10rem;
+        margin: 0rem 0 0rem 0;
+        font-family: "Univia Pro Light";
+        resize: none;
+        margin-left: 25rem;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .go-top {
+    display: none;
+  }
+  .socials-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .fab {
+      font-size: 4rem;
+      display: inline-block;
+      color: $color-icons;
+
+      padding: 2rem 0;
+    }
+  }
+  .socials__icons-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div a:not(:last-child) {
+      margin-right: 9rem;
+    }
+  }
+  .socials {
+    display: none;
+  }
+  .submit-btn {
+    background-color: $color-primary;
+    border: none;
+    box-shadow: 0px 4px 4px $box-shadow;
+    padding: 0.9rem 1.7rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: 5rem auto 7rem auto;
+
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+  .go-top-phone {
+    display: block;
+    margin: 10rem auto;
+
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-2%);
+      filter: brightness(85%);
+    }
+  }
+}
+
+@include respond(phone-l) {
+  .socials-phone {
+    .fab {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@include respond(phone-m) {
+  .cta {
+    &__1,
+    &__2,
+    &__3 {
+      input[type="email"] {
+        width: 30rem;
+        margin-right: 20rem;
+        padding-left: 1.5rem;
+      }
+      input[type="text"] {
+        width: 30rem;
+        padding-left: 1.5rem;
+        margin-left: 25rem;
+      }
+    }
+
+    &__3 {
+      textarea {
+        width: 30rem;
+        margin-left: 16rem;
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+@include respond(phone-s) {
+  .cta {
+    &__1,
+    &__2,
+    &__3 {
+      input[type="email"] {
+        width: 30rem;
+        margin-right: 10rem;
+      }
+      input[type="text"] {
+        width: 30rem;
+        margin-left: 15rem;
+      }
+    }
+
+    &__3 {
+      textarea {
+        width: 30rem;
+        margin-left: 5rem;
+      }
+    }
+  }
+}
